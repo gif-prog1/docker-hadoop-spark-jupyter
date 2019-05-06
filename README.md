@@ -41,6 +41,7 @@ $ docker stop hadoop_cluster
 ### LIVY
 
 > **LIVY UI** : [http://127.0.0.1:8998](http://127.0.0.1:8998)
-> **Explore more about LIVY** : [https://livy.apache.org/docs/latest/rest-api.html](Livy Documentation)
+>
+> **Explore more about LIVY** : [Livy Documentation](https://livy.apache.org/docs/latest/rest-api.html)
 
 #### Enjoy! :)
