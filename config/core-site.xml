@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9820/</value>
+        <description>NameNode URI</description>
+    </property>
+     <property>
+      <name>io.file.buffer.size</name>
+      <value>131072</value>
+      <description>Buffer size</description>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/var/hadoop/hadop-${user.name}</value>
+    </property>
+</configuration>
