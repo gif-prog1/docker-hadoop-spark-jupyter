@@ -19,15 +19,15 @@ RUN \
 # downloading and setting up hadoop and spark
 RUN \
   wget http://mirrors.estointernet.in/apache/hadoop/common/hadoop-2.8.4/hadoop-2.8.4.tar.gz && \
-  wget http://mirrors.estointernet.in/apache/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz && \
+  wget http://archive.apache.org/dist/spark/spark-2.4.2/spark-2.4.2-bin-hadoop2.7.tgz && \
   wget http://archive.apache.org/dist/incubator/livy/0.5.0-incubating/livy-0.5.0-incubating-bin.zip && \
   tar xzf hadoop-2.8.4.tar.gz && \
-  tar xzf spark-2.4.0-bin-hadoop2.7.tgz && \
+  tar xzf spark-2.4.2-bin-hadoop2.7.tgz && \
   unzip livy-0.5.0-incubating-bin.zip && \
   mv hadoop-2.8.4 $HADOOP_HOME && \
-  mv spark-2.4.0-bin-hadoop2.7 $SPARK_HOME && \
+  mv spark-2.4.2-bin-hadoop2.7 $SPARK_HOME && \
   mv livy-0.5.0-incubating-bin $LIVY_HOME && \
-  rm -rf hadoop-2.8.4.tar.gz spark-2.4.0-bin-hadoop2.7.tgz livy-0.5.0-incubating-bin.zip && \
+  rm -rf hadoop-2.8.4.tar.gz spark-2.4.2-bin-hadoop2.7.tgz livy-0.5.0-incubating-bin.zip && \
   mkdir -p /opt/hadoop/data/hdfs/namenode && \
   mkdir -p /opt/hadoop/data/hdfs/datanode
 
