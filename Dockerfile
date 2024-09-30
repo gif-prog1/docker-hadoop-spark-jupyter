@@ -11,6 +11,7 @@ RUN \
   apt-get update && apt-get install -y \
   openssh-server \
   rsync \
+  gcc \
   vim \
   sudo \
   zip \
@@ -46,7 +47,7 @@ COPY script/start-hadoop.sh .
 COPY config/requirements.txt .
 
 # install jupyter and setting up for spark
-RUN pip install jupyter
+RUN pip install jupyter pandas modin
 RUN pip install -r requirements.txt
 RUN mkdir -p ${HOME}/notebooks
 
